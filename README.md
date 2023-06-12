@@ -1,6 +1,6 @@
 # ChatGPT4 Mobile Extension
 
-This is a very simple Chrome extension that appended the GPT4-Mobile into the [official webpage](https://chat.openai.com). See the screenshot below.
+A neat and tidy and simple Chrome extension that appended the GPT4-Mobile version into the [official webpage](https://chat.openai.com). See the screenshot below.
 
 ![gpt4-mobile-extension](https://github.com/VictorZhang2014/gpt4-mobile-extension-chrome/blob/main/images/gpt4-mobile-extension.png)
 
