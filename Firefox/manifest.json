@@ -1,0 +1,36 @@
+{
+  "name": "GPT4 Mobile for Extension",
+  "description": "This is based on ChatGPT4 Mobile App version with manipulating into the Chrome Extension",
+  "homepage_url": "https://github.com/VictorZhang2014/gpt4-mobile-extension-chrome",
+  "author": "VictorZhang",
+  "version": "0.0.1",
+  "manifest_version": 3, 
+  "action": {
+    "default_title": "GPT4 Mobile"
+  },
+  "content_scripts": [ 
+    {
+      "run_at" : "document_idle",
+      "js": ["docidle.js"],
+      "matches": [
+        "https://*/*",
+        "http://*/*"
+      ]
+    }
+  ], 
+  "background": { 
+    "page": "bkg.js"
+  },
+  "permissions": [ 
+  ], 
+  "web_accessible_resources": [{
+    "resources": ["fetch.js"],
+    "matches": ["<all_urls>"]
+  }],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "victorzhangq@gmail.com",
+      "strict_min_version": "109.0"
+    }
+  }  
+}
